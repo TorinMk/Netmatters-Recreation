@@ -1,23 +1,27 @@
-// Base Styles
-
 * {
-    -moz-box-sizing: border-box;
     box-sizing: border-box;
 }
 
-// Text
 
-h4 {
-    text-transform: uppercase;
+body {
+    margin: 0;
 }
 
-// Lists
+.container {
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: 15px;
+    padding-right: 15px;
 
+    @media (min-width: 768px) {
+        width: 750px;
+    }
 
-// Images
+    @media (min-width: 992px) {
+        width: 970px;
+    }
 
-
-// Forms
-
-
-// Buttons
+    @media (min-width: 1260px) {
+        width: 1200px;
+    }
+}
