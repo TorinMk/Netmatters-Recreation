@@ -16,7 +16,7 @@
         .about-menu {
             flex: 100%;
         }
-    p {
+    .about-text p {
         a {
             text-decoration: none;
             color: $white;
@@ -52,6 +52,21 @@
     .trust-btn {
         background-color: #009b69;
     }
+}
+
+.quote-author {
+    font-weight: $font-weight--bold;
+    color: lighten($black, 75%)
+}
+
+.p-bold {
+    font-weight: $font-weight--bold;
+}
+
+.stars {
+    color: orange;
+    font-size: 50px;
+    margin-bottom: 25px;
 }
 
 @media (max-width: 535px) { 
