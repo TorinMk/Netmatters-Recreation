@@ -19,11 +19,16 @@
             @extend %on-hover;
         }
     }
+    .quote {
+        font-weight: $font-weight--bold;
+    }
     span {
+
         a {
             color: $white;
             text-decoration: none;
             @extend %on-hover;
         }
     }
+
 }
