@@ -3,4 +3,27 @@
     color: $white;
     padding: 30px 0 0;
     position:  relative;
+
+    .about-row {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+        .about-menu {
+            flex: 100%;
+        }
+    p {
+        a {
+            text-decoration: none;
+            color: $white;
+            @extend %on-hover;
+        }
+    }
+    span {
+        a {
+            color: $white;
+            text-decoration: none;
+            @extend %on-hover;
+        }
+    }
 }
