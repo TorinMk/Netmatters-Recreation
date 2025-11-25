@@ -20,6 +20,7 @@
     }
     .quote {
         font-weight: $font-weight--bold;
+        font-size: 1.3rem;
     }
     span {
 
@@ -29,10 +30,12 @@
         }
     }
 }
+.no-select {
+    user-select: none;
+}
 
 .about-btn a {
     background-color: darken($background, 8%);
-    margin: 10px;
     @extend %about-btn;
     &:hover {
         background-color: darken($background, 15%)
@@ -44,6 +47,7 @@
 .review-btn {
     .google-btn {
         background-color: #4387f6;
+        margin-right: 8px;
         &:hover {
         background-color: darken(#4387f6, 5%);
     }
@@ -58,7 +62,8 @@
 
 .quote-author {
     font-weight: $font-weight--bold;
-    color: lighten($black, 75%)
+    color: lighten($black, 75%);
+    font-size: 1.1rem;
 }
 
 .p-bold {
@@ -71,6 +76,32 @@
     margin-bottom: 25px;
 }
 
+.row {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    height: auto;
+    a {
+        height: auto;
+        flex-direction: row;
+    }
+    div {
+        flex: 1;
+    }
+
+}
+
+.column {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+@media (min-width: $breakpoint-md) {
+    .column {
+        width: 50%;
+    }
+}
+
 @media (max-width: 535px) { 
     .about-btn a:first-child {
         margin-bottom: 17px !important;
@@ -80,3 +111,8 @@
     }
 }
 
+@media (max-width: 600px) {
+    .row {
+        flex-direction: column;
+    }
+}
