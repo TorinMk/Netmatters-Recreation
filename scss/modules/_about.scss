@@ -8,14 +8,9 @@
         text-decoration: none;
         color: $white;
     }
-    .about-row {
-        display: flex;
-        flex-wrap: wrap;
+    .about-menu {
+        flex: 100%;
     }
-
-        .about-menu {
-            flex: 100%;
-        }
     .about-text p {
         a {
             text-decoration: none;
@@ -37,6 +32,7 @@
 
 .about-btn a {
     background-color: darken($background, 8%);
+    margin: 10px;
     @extend %about-btn;
     &:hover {
         background-color: darken($background, 15%)
@@ -48,9 +44,15 @@
 .review-btn {
     .google-btn {
         background-color: #4387f6;
+        &:hover {
+        background-color: darken(#4387f6, 5%);
     }
+    }      
     .trust-btn {
         background-color: #009b69;
+        &:hover {
+        background-color: darken(#009b69, 5%);
+        }
     }
 }
 

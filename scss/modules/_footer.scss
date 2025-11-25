@@ -11,6 +11,9 @@ footer {
         .footer-menu {
             flex: 100%;
             margin-bottom: 30px;
+            font-size: .8125rem;
+            line-height: 1.375rem;
+            text-align: left;
 
             @media (min-width: #{$breakpoint-sm}) {
                 flex: 50%;

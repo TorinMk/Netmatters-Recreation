@@ -1,4 +1,4 @@
-* {
+*, :after, :before {
     box-sizing: border-box;
 }
 
@@ -23,17 +23,17 @@ p {
     font-weight: $font-weight--bold;
 }
 
+
+
 .row {
-    display: 0 0 auto;
-    max-width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex: 1;
+    justify-content: center;
+    gap: 10px;
 }
 
-.column {
-    position: relative;
-    min-height: 1px;
-    padding-left: 15px;
-    padding-right: 15px;
-}
+
 
 .container {
     margin-right: auto;
