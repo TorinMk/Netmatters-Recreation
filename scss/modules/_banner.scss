@@ -1,0 +1,23 @@
+.actions {
+    height: 56px;
+    line-height: 46px;
+    font-size: 1.125rem;
+    float: left;
+    gap: 10px;
+    a {
+        border: 1px solid transparent;
+        border-radius: 3px;
+        padding: 5px 15px;
+        font-weight: $font-weight--medium;
+        color: $white;
+
+    }
+    .sup {
+        background-color: #4183d7;
+        border-color: #4183d7;
+    }
+    .con {
+        background-color:#999aa2;
+        border-color: #999aa2;
+    }
+}

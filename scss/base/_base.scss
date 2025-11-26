@@ -26,6 +26,20 @@ p {
     font-weight: $font-weight--bold;
 }
 
+.row {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    height: auto;
+    a {
+        height: auto;
+        flex-direction: row;
+    }
+    div {
+        flex: 1;
+    }
+}
+
 .container {
     margin-right: auto;
     margin-left: auto;

@@ -53,3 +53,25 @@ footer {
         }
     }
 }
+.footer-footer {
+        padding: 5px 0 10px;
+        width: 100%;
+        background-color: darken($background,5%);
+        font-size: .8125rem;
+        color: $white;
+
+        display: flex;
+        gap: 1rem;
+        align-items: center;
+        a {
+            color: $white;
+            text-decoration: none;
+            @extend %on-hover
+        }
+        ul {
+            list-style: none;
+            margin: -2px 0 0 0;
+            padding: 0;
+            gap: .5rem;
+        }
+    }
