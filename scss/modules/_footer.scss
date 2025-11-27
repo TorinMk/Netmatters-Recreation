@@ -20,7 +20,7 @@ footer {
         .footer-menu {
             flex: 100%;
             margin-bottom: 30px;
-            font-size: .8125rem;
+            font-size: $font-size-sm;
             line-height: 1.375rem;
             text-align: left;
 
@@ -38,7 +38,7 @@ footer {
 
             h4 {
                 text-transform: uppercase;
-                font-size: 1rem;
+                font-size: $font-size-md;
                 margin-bottom: 26px;
             }
             
@@ -57,7 +57,7 @@ footer {
     padding: 5px 0 10px;
     width: 100%;
     background-color: darken($background,5%);
-    font-size: .8125rem;
+    font-size: $font-size-sm;
     color: $white;
 
     display: flex;
