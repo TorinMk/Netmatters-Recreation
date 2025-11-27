@@ -14,7 +14,7 @@
         color: $white;
         text-decoration: none;
     }
-    .banner-logo {
+    .header-logo {
         flex: 0 0 auto;
     }
     .sup {
@@ -35,6 +35,10 @@
             font-size: 1.438rem;
             line-height: 45px;
         }
+    }
+
+    .sidebar {
+        display: none;
     }
 
     .search {
