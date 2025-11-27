@@ -12,6 +12,7 @@
         padding: 5px 15px;
         font-weight: $font-weight--medium;
         color: $white;
+        text-decoration: none;
     }
     .banner-logo {
         flex: 0 0 auto;
@@ -27,22 +28,34 @@
     .ban-btn {
         display: flex;
         flex: 0 0 auto;
+        text-transform: uppercase;
+
+        i {
+            margin-right: 5px;
+            font-size: 1.438rem;
+            line-height: 45px;
+        }
     }
+
     .search {
         flex: 1;
 
         form {
             width: 100%;
             padding: 5px 15px;
+            display: flex;
+            align-items: center;
         }
         input {
             width: 40%;
             padding: 0.5rem;
         }
     }
-    span {
-        background-color: #999aa2;
-    }
+        button {
+            color: $white;
+            background-color: #999aa2;
+            border: none;
+        }
 }
 
 header {
