@@ -1,0 +1,88 @@
+.carousel-container {
+    position: relative;
+    overflow: hidden;
+    width: 100vw;
+}
+
+.carousel {
+    margin: 3em 0 0 0;
+    display: flex;
+    transition: transform 0.5s ease;
+    padding-bottom: 2rem;
+}
+
+.card {
+    flex: 0 0 100vw;
+    position: relative;
+    display: flex;
+    justify-content: center;
+
+    img {
+        height: auto;
+        width: 100vw;
+        display: 0block;
+    }
+    h1, p, a {
+        position: absolute;
+        text-align: left;
+        left: 20%;
+        color: $white;
+        word-wrap: break-word;
+    }
+    h1 {
+        top: 20%;
+        font-size: 4rem;
+    }
+    p {
+        top: 50%;
+        font-size: 1.625rem;
+    }
+    a {
+        top: 75%;
+        background: #926fb1;
+        border-radius: 3px;
+    }
+}
+
+// hides default inputs to show custom made inputs
+input[name="slider"] {
+    display: none;
+}
+
+.carousel-dots {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 1rem;
+
+    label {
+        height: 1rem;
+        width: 1rem;
+        border-radius: 50%;
+        background: lighten($black,50%);
+        cursor: pointer;
+        display: inline-block;
+    }
+}
+
+// set to 700vw (7 slides * 100vw) each -100vw is a new card
+#c1:checked ~ .carousel { transform: translateX(0); } 
+#c2:checked ~ .carousel { transform: translateX(-100vw); }
+#c3:checked ~ .carousel { transform: translateX(-200vw); }
+#c4:checked ~ .carousel { transform: translateX(-300vw); }
+#c5:checked ~ .carousel { transform: translateX(-400vw); }
+#c6:checked ~ .carousel { transform: translateX(-500vw); }
+#c7:checked ~ .carousel { transform: translateX(-600vw); }
+
+
+// When dot selected change's colour
+#c1:checked ~ .carousel-dots label:nth-child(1),
+#c2:checked ~ .carousel-dots label:nth-child(2),
+#c3:checked ~ .carousel-dots label:nth-child(3),
+#c4:checked ~ .carousel-dots label:nth-child(4),
+#c5:checked ~ .carousel-dots label:nth-child(5),
+#c6:checked ~ .carousel-dots label:nth-child(6),
+#c7:checked ~ .carousel-dots label:nth-child(7) {
+    background: $black;
+}
