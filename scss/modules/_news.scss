@@ -1,0 +1,17 @@
+.latest-news {
+    h3 {
+        @extend %on-hover;
+    }
+    .gap {
+        padding-top: 50px;
+    }
+    .section {
+        padding-top: 15px;
+        padding-bottom: 50px;
+    }
+    img {
+        width: 350px;
+        height: 200px;
+    }
+}
+    
