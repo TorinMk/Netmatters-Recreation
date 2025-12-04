@@ -1,5 +1,5 @@
 .latest-news {
-    h3 {
+    h3, i {
         @extend %on-hover;
     }
     .gap {
@@ -13,5 +13,16 @@
         width: 350px;
         height: 200px;
     }
+    .news-item {
+        padding: 0 15px;
+    }
+    a {
+        background-color: #f7b322;
+        color: $white;
+        font-size: $font-size-md;
+        padding: 5px 15px;
+        border-radius: 3px;
+        line-height:  35px;
+        text-decoration: none;
+    }
 }
-    
