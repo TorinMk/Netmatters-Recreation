@@ -82,3 +82,11 @@
         height: 50%;
     }
 }
+
+.user, .ai, .tech {
+    transition: transform 1.5s ease;
+    &:hover {
+        transform: translateY(-20px)
+    }
+}
+
