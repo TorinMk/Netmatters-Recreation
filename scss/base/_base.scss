@@ -39,6 +39,9 @@ h4 {
 
 .float-left {
     float: left;
+    h2 {
+        font-weight: $font-weight--bold
+    }
 }
 .float-right {
     float: right;
