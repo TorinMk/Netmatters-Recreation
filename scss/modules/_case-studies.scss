@@ -1,25 +1,25 @@
-.partners {
+.case-studies {
     width: 100%;
     overflow: hidden;
     position: relative;
-}
-.track {
+
+    .track {
     display: flex;
     width: max-content;
     animation: scroll 30s linear infinite;
     
-    img {
-    height: auto;
-    margin-right: 20px;
-    user-select: none;
+        img {
+        height: auto;
+        margin-right: 20px;
+        user-select: none;
 
-    filter : grayscale(100%);
-    &:hover {
-        filter: grayscale(0%);
+        filter : grayscale(100%);
+        &:hover {
+            filter: grayscale(0%);
+        }
+        }
     }
 }
-}
-
 
 @keyframes scroll {
   0% {
