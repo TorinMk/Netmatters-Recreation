@@ -42,16 +42,17 @@
     }
 }
 .review-btn a {
+    flex-shrink: 1;
+    white-space: nowrap;
     @extend %about-btn;
 }
 .review-btn {
     display: flex;
     flex: 1;
-    white-space: nowrap;
+    gap: 8px;
 
     .google-btn {
         background-color: #4387f6;
-        margin-right: 8px;
         &:hover {
         background-color: darken(#4387f6, 5%);
     }

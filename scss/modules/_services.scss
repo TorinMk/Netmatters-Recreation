@@ -1,2 +1,22 @@
 .services {
+    h3 {
+        margin-left: 20px;
+        margin-bottom: 28px;
+        @extend %on-hover;
+    }
+}
+
+
+.service-item  {
+    margin-top: 30px;
+    padding: 30px;
+    border: 1px solid #ccc;
+    border-radius: 15px;
+    margin-left: 15px;
+    margin-right: 15px;
+
+    a, i {
+        display: flex;
+        justify-content: center;
+    }
 }
