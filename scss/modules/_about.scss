@@ -35,10 +35,10 @@
 }
 
 .about-btn a {
-    background-color: darken($background, 8%);
+    background-color: #272936;
     @extend %about-btn;
     &:hover {
-        background-color: darken($background, 15%)
+        background-color: darken(#272936, 15%)
     }
 }
 .review-btn a {
@@ -58,7 +58,7 @@
     }
     }      
     .trust-btn {
-        background-color: #009b69;
+        background-color: #00b67b;
         &:hover {
         background-color: darken(#009b69, 5%);
         }
@@ -81,6 +81,13 @@
     margin-bottom: 25px;
 }
 
+.review-btn {
+    margin-top: 25px;
+}
+
+.margin {
+    margin-bottom: 25px;
+}
 
 .column {
     padding-left: 15px;
@@ -99,6 +106,10 @@
     }
     .review-btn a:first-child {
         margin-bottom: 17px !important;
+    }
+    .review-btn {
+        flex-direction: column;
+        width: 100%;
     }
 }
 

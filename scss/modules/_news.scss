@@ -97,3 +97,10 @@
         transform: translateY(-20px)
     }
 }
+
+
+@media (max-width: 535px) {
+    .news-item {
+        margin-top: 25px;
+    }
+}
