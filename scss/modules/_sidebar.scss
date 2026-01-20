@@ -1,0 +1,24 @@
+.sidebar {
+    position: fixed;
+    top: 0;
+    right: -320px;
+    width: 320px;
+    height: 100vh;
+    background-color: #333645;
+    color: #fff;
+    padding: 20px;
+    box-shadow: -2px 0 8px rgba(0,0,0,0.3);
+    transition: right 0.4s ease-in-out;
+    z-index: 9999;
+    overflow-y: auto;
+    text-decoration: none;
+
+    a:visited {
+        color: $white;
+        text-decoration: none;
+    }
+}
+
+.sidebar.active {
+    right: 0; // Makes sidebar go on right side
+}
