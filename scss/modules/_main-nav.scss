@@ -1,0 +1,20 @@
+.main-navigation {
+    display: flex;
+    background-color: #333645;
+    flex-direction: column;
+    color: $white;
+
+    ul {
+        display: flex;
+        width: 100%;
+    }
+    li {
+        flex: 1;
+        display: flex;
+
+        a {
+            flex: 1;
+            display: flex;
+        }
+    }
+}
