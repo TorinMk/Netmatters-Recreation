@@ -28,3 +28,9 @@
     }
 }
 
+.nav-dropdown {
+    @include dropdown;
+    display: none;
+    width: 100%;
+
+}

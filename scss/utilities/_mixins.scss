@@ -33,3 +33,14 @@
     &.cyb { @include service-colour(#f62459); }
     &.dev { @include service-colour(#ce4125); }
 }
+
+@mixin dropdown {
+  display: none;
+  position: absolute;
+  width: 100%;
+
+  .main-navigation:hover &,
+  &:hover {
+    display: block;
+  }
+}
