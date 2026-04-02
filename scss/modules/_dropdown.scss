@@ -1,0 +1,48 @@
+.main-navigation {
+    position: relative;
+}
+
+.dropdown {
+    display: none;
+    position: absolute;
+    top: 73%;
+    left: 0;
+    width: 100%;
+    padding: 40px;
+    gap: 40px;
+    z-index: 999;
+
+    h2 {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    div {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 40px;
+        width: 100%;
+        align-items: flex-start;
+        justify-content: flex-start;
+        margin-left: 0;
+
+        i {
+            flex: 0 0 calc((100% / 3) - 40px);
+            display: block;
+            margin: 0;
+        }
+
+        a {
+            display: inline-block;
+            white-space: nowrap;
+        }
+    }
+}
+
+.main-navigation ul li {
+    &:hover .dropdown,
+    .dropdown:hover {
+        display: flex;
+        flex-direction: column;
+    }
+}

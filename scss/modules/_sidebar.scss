@@ -1,24 +1,47 @@
 .sidebar {
-    position: fixed;
+    position: absolute;
     top: 0;
     right: -320px;
     width: 320px;
     height: 100vh;
     background-color: #333645;
-    color: #fff;
-    padding: 20px;
-    box-shadow: -2px 0 8px rgba(0,0,0,0.3);
-    transition: right 0.4s ease-in-out;
+    transition: right 0.4s ease;
     z-index: 9999;
-    overflow-y: auto;
+    color: $white;
     text-decoration: none;
+    overflow-y: auto;
+    max-height: 100vh;
+
+    a {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+        padding: 10px 15px;
+        color: $white;
+        text-decoration: none;
+    }
+
+    i {
+        flex-shrink: 0;
+        display: inline-block;
+        width: auto;
+        text-align: center;
+    }
 
     a:visited {
         color: $white;
-        text-decoration: none;
     }
 }
 
 .sidebar.active {
     right: 0; // Makes sidebar go on right side
+}
+
+.page-content {
+    transition: transform 0.4s ease;
+}
+
+.page-content.shifted {
+    transform: translateX(-320px);
 }

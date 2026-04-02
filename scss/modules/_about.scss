@@ -1,4 +1,5 @@
 #about {
+    overflow: hidden;
     background-color: $background;
     color: $white;
     padding: 50px 15px;
@@ -34,6 +35,11 @@
     user-select: none;
 }
 
+.about-btn {
+    display: flex;
+    flex-wrap: wrap;
+}
+
 .about-btn a {
     background-color: #272936;
     @extend %about-btn;
@@ -41,13 +47,16 @@
         background-color: darken(#272936, 15%)
     }
 }
+
 .review-btn a {
     flex-shrink: 1;
-    white-space: nowrap;
+    white-space: normal;
     @extend %about-btn;
 }
+
 .review-btn {
     display: flex;
+    flex-wrap: wrap;
     flex: 1;
     gap: 8px;
 
@@ -69,6 +78,7 @@
     font-weight: $font-weight--bold;
     color: lighten($black, 75%);
     font-size: 1.1rem;
+    word-wrap: break-word;
 }
 
 .p-bold {
@@ -90,11 +100,12 @@
 }
 
 .column {
-    padding-left: 15px;
-    padding-right: 15px;
+    width: 100%;
+    padding: 15px;
+    box-sizing: border-box;
 }
 
-@media (min-width: $breakpoint-md) {
+@media (min-width: 768px) {
     .column {
         width: 50%;
     }

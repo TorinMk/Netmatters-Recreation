@@ -44,3 +44,23 @@
     display: block;
   }
 }
+
+
+
+@mixin nav-item($color) {
+  &:hover {
+    background-color: $color;
+
+    .dropdown {
+      background-color: $color;
+    }
+  }
+}
+
+.consult    { @include nav-item(#67809f); }
+.support    { @include nav-item(#4183d7); }
+.marketing  { @include nav-item(#2ecc71); }
+.service   { @include nav-item(#d64541); }
+.design     { @include nav-item(#926fb1); }
+.security   { @include nav-item(#f62459); }
+.training   { @include nav-item(#ce4125); }

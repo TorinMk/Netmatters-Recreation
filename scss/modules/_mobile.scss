@@ -1,0 +1,30 @@
+.mobileSearch {
+    width: 98vw;
+    max-width: 98%;
+    height: 60px;
+    padding-left: 10px;
+
+    form {
+        display: flex;
+        height: 100%;
+    }
+    input {
+        flex: 1;
+    }
+    button {
+        width: 65px;
+    }
+}
+
+.mobileContact {
+
+}
+
+@media (max-width: $breakpoint-sm) {
+    .actions {
+        flex-direction: row;
+        flex-wrap: nowrap;
+        align-items: center;
+        justify-content: space-between;
+    }
+}
