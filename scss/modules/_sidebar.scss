@@ -1,41 +1,71 @@
 .sidebar {
-    position: absolute;
+    position: fixed;
     top: 0;
-    right: -320px;
-    width: 320px;
+    right: 0;
+    width: 350px;
     height: 100vh;
+
     background-color: #333645;
-    transition: right 0.4s ease;
+    transition: transform 0.4s ease;
+    transform: translateX(100%);
+
     z-index: 9999;
     color: $white;
     text-decoration: none;
+    text-transform: uppercase;
+
+    overflow-x: hidden;
     overflow-y: auto;
-    max-height: 100vh;
 
     a {
         display: flex;
         align-items: center;
-        justify-content: space-between;
         width: 100%;
-        padding: 10px 15px;
         color: $white;
         text-decoration: none;
     }
 
-    i {
-        flex-shrink: 0;
-        display: inline-block;
-        width: auto;
-        text-align: center;
+    .fa-angles-right {
+        font-size: 7px;
     }
 
     a:visited {
         color: $white;
     }
+
+    h4 {
+        padding: 20px;
+        font-weight: $font-weight--medium;
+        font-size: $font-size-md;
+    }
+
+    li {
+        font-size: $font-size-sm;
+        background-color: rgba(0, 0, 0, .25);
+        padding: 15px 20px;
+
+        i {
+            padding-right: 15px;
+        }
+    }
+
+    li::marker {
+        content: "";
+    }
+
+    li, h4 {
+        border-bottom: 1px solid hsla(0, 0%, 100%, .05);
+        border-top: 1px solid hsla(0, 0%, 100%, .05);
+    }
+
+}
+
+.sidebar > div:has(li:hover) h4{
+    background-color: lighten(#333645, 10%);
 }
 
 .sidebar.active {
-    right: 0; // Makes sidebar go on right side
+    transform: translateX(0);
 }
 
 .page-content {
@@ -43,5 +73,5 @@
 }
 
 .page-content.shifted {
-    transform: translateX(-320px);
+    transform: translateX(-350px);
 }

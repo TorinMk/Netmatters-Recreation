@@ -10,231 +10,245 @@
     <body>
 
 <div class="page-content">
+   
     <!-- Cookies Popup -->
-    <div class="container">
-        <div id="cookies" class="cookies-popup" style="display:none">
-            <p> This website uses cookies to ensure you have the best experience </p>
-            <button id="cookiesAccept">Accept</button>
+    <div id="cookies" style="display: none;">
+        <div class="cookies-overlay">
+            <div class="cookies-test">
+                <div class="cookies-header">
+                    <h3>Cookies Policy</h3>
+                </div>
+                <div class="cookies-body">
+                    <p>
+                        Our website uses cookies. This helps us provide you with a good experience on our website. 
+                        To see what cookies we use and what they do, and to opt-in on non-essential cookies click "change settings". 
+                        For a detailed explanation, click on "Privacy Policy" otherwise click "Accept Cookies" to enter.
+                    </p>
+                </div>
+                <div class="cookies-buttons">
+                    <div class="settings"><a href="#">Change Settings</a></div>
+                    <div class="accept"><a href="#"  id="cookies-accept">Accept Cookies</a></div>
+                </div>
+            </div>
         </div>
     </div>
 
 
+    <div class="stickyy">
         <!--  Header  -->
-    <header>
-        <div class="inner">
-            <div class="container">
-                <div class="row">
-                    <div class="header-logo">
-                        <img src="Assets/img/f-logo.webp" alt="Netmatters Logo">
-                    </div>
-
-                    <div class="actions">
-                        <div class="ban-btn">
-                            <a href="#" class="no-select sup">
-                                <i class="fa fa-computer-mouse"></i>Support
-                            </a>
-
-                            <a href="#" class="no-select con">
-                                <i class="fa fa-paper-plane"></i>Contact
-                            </a>
-
+        <header class="header">
+            <div class="inner">
+                <div class="container">
+                    <div class="row">
+                        <div class="header-logo">
+                            <img src="Assets/img/f-logo.webp" alt="Netmatters Logo">
                         </div>
 
-                        <div class="search">
-                            <form>
-                                <input placeholder="Search...." type="text">
-                                <button>
-                                    <i class="fa fa-search"></i>
+                        <div class="actions">
+                            <div class="ban-btn">
+                                <a href="#" class="no-select sup">
+                                    <i class="fa fa-computer-mouse"></i>Support
+                                </a>
+
+                                <a href="#" class="no-select con">
+                                    <i class="fa fa-paper-plane"></i>Contact
+                                </a>
+
+                            </div>
+
+                            <div class="search">
+                                <form>
+                                    <input placeholder="Search...." type="text">
+                                    <button>
+                                        <i class="fa fa-search"></i>
+                                    </button>
+                                </form>
+                            </div>
+                            <div>
+                                <button class="menu-toggle">
+                                    <i class="fa-solid fa-bars"></i>
                                 </button>
-                            </form>
-                        </div>
-                        <div>
-                            <button class="menu-toggle">
-                                <i class="fa-solid fa-bars"></i>
-                            </button>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </header>
+        </header>
 
-
-    <div class="main-navigation">
-        <div class="container">
-            <div>
-                <ul>
-                    <li class="consult">
-                        <a>
-                            <i class="fa fa-laptop"></i>
-                            <h4>Consultancy & Development</h4>
-                        </a>
-
-                        <div class="dropdown consult-dropdown">
-                            <h2>Our Consultancy & Development Services</h2>
-                            <div>
-                                <i></i><a>Bespoke CRM</a>
-                                <i></i><a>Mobile App Development</a>
-                                <i></i><a>Operational Systems</a>
-                                <i></i><a>Intranet Development</a>
-                                <i></i><a>SAP S/4HANA Management</a>
-                            </div>
-                            <div>
-                                <i></i><a>Business Automation</a>
-                                <i></i><a>Bespoke Databases</a>
-                                <i></i><a>Business Central implementation</a>
-                                <i></i><a>Customer Portal Development</a>
-                            </div>
-                            <div>
-                                <i></i><a>Software Integrations</a>
-                                <i></i><a>Shareapoint Development</a>
-                                <i></i><a>Internet of Things (IoT) Software</a>
-                                <i></i><a>Reporting Hub</a>
-                            </div>
-                        </div>
-                    </li>
-
-                        <li class="support">
+        <div class="main-navigation">
+            <div class="container">
+                <div>
+                    <ul>
+                        <li class="consult">
                             <a>
-                                <i class="fa fa-desktop"></i>
-                                <h4>IT  Support</h4>
+                                <i class="fa fa-laptop"></i>
+                                <h4><small>Consultancy</small> & Development</h4>
                             </a>
 
-                            <div class="dropdown support-dropdown">
-                            <h2>Our IT Support Services</h2>
-                            <div>
-                                <i></i><a>Managed IT Support</a>
-                                <i></i><a>IT Consultancy</a>
+                            <div class="dropdown consult-dropdown">
+                                <h2>Our Consultancy & Development Services</h2>
+                                <div>
+                                    <i></i><a>Bespoke CRM</a>
+                                    <i></i><a>Mobile App Development</a>
+                                    <i></i><a>Operational Systems</a>
+                                    <i></i><a>Intranet Development</a>
+                                    <i></i><a>SAP S/4HANA Management</a>
+                                </div>
+                                <div>
+                                    <i></i><a>Business Automation</a>
+                                    <i></i><a>Bespoke Databases</a>
+                                    <i></i><a>Business Central implementation</a>
+                                    <i></i><a>Customer Portal Development</a>
+                                </div>
+                                <div>
+                                    <i></i><a>Software Integrations</a>
+                                    <i></i><a>Shareapoint Development</a>
+                                    <i></i><a>Internet of Things (IoT) Software</a>
+                                    <i></i><a>Reporting Hub</a>
+                                </div>
                             </div>
-                            <div>
-                                <i></i><a>Business IT Support</a>
-                                <i></i><a>Cloud Service Provider</a>
-                            </div>
-                            <div>
-                                <i></i><a>Office 365 for Business</a>
-                            <i></i><a>Data Backup & Disaster Recovery</a>
-                            </div>
-                        </div>
-                    </li>
-                    <li class="marketing">
-                        <a>
-                            <i class="fa fa-chart-simple"></i>
-                            <h4>Digital Marketing</h4>
-                        </a>
+                        </li>
 
-                        <div class="dropdown marketing-dropdown">
-                        <h2>Our Digital Marketing Services</h2>
-                            <div>
-                                <i></i><a>Search Engine Optimisation (SEO)</a>
-                                <i></i><a>Email Marketing</a>
-                            </div>
-                            <div>
-                                <i></i><a>Pay Per Click Advertising (PPC)</a>
-                                <i></i><a>Social Media Marketing</a>
-                            </div>
-                            <div>
-                                <i></i><a>Conversion Rate Optimisation (CRO)</a>
-                                <i></i><a>Content Marketing</a>
-                            </div>
-                        </div>
-                    </li>
+                            <li class="support">
+                                <a>
+                                    <i class="fa fa-desktop"></i>
+                                    <h4><small>IT</small> Support</h4>
+                                </a>
 
-                    <li class="service">
-                        <a>
-                            <i class="fa fa-phone-volume"></i>
-                            <h4>Telecoms Services</h4>
-                        </a>
-                        <div class="dropdown services-dropdown">
-                            <h2>Our Telecoms Services</h2>
-                            <div>
-                                <i></i><a>Business Mobile</a>
-                                <i></i><a>Business Connectivity</a>
+                                <div class="dropdown support-dropdown">
+                                <h2>Our IT Support Services</h2>
+                                <div>
+                                    <i></i><a>Managed IT Support</a>
+                                    <i></i><a>IT Consultancy</a>
+                                </div>
+                                <div>
+                                    <i></i><a>Business IT Support</a>
+                                    <i></i><a>Cloud Service Provider</a>
+                                </div>
+                                <div>
+                                    <i></i><a>Office 365 for Business</a>
+                                <i></i><a>Data Backup & Disaster Recovery</a>
+                                </div>
                             </div>
-                            <div>
-                                <i></i><a>Phone System Health Check</a>
-                                <i></i><a>Telecoms Bill Review</a>
-                            </div>
-                            <div>
-                                <i></i><a>Business Phone Systems</a>
-                                <i></i><a>3CX Systems</a>
-                            </div>
-                        </div>
-                    </li>
+                        </li>
+                        <li class="marketing">
+                            <a>
+                                <i class="fa fa-chart-simple"></i>
+                                <h4><small>Digital</small> Marketing</h4>
+                            </a>
 
-                    <li class="design">
-                        <a>
-                            <i class="fa fa-code"></i>
-                            <h4>Web Design</h4>
-                        </a>
+                            <div class="dropdown marketing-dropdown">
+                            <h2>Our Digital Marketing Services</h2>
+                                <div>
+                                    <i></i><a>Search Engine Optimisation (SEO)</a>
+                                    <i></i><a>Email Marketing</a>
+                                </div>
+                                <div>
+                                    <i></i><a>Pay Per Click Advertising (PPC)</a>
+                                    <i></i><a>Social Media Marketing</a>
+                                </div>
+                                <div>
+                                    <i></i><a>Conversion Rate Optimisation (CRO)</a>
+                                    <i></i><a>Content Marketing</a>
+                                </div>
+                            </div>
+                        </li>
 
-                        <div class="dropdown design-dropdown">
-                            <h2>Our Web Design Services</h2>
-                            <div>
-                                <i></i><a>Bespoke Website Design</a>
-                                <i></i><a>Branding & Design</a>
+                        <li class="service">
+                            <a>
+                                <i class="fa fa-phone-volume"></i>
+                                <h4><small>Telecoms</small> Services</h4>
+                            </a>
+                            <div class="dropdown services-dropdown">
+                                <h2>Our Telecoms Services</h2>
+                                <div>
+                                    <i></i><a>Business Mobile</a>
+                                    <i></i><a>Business Connectivity</a>
+                                </div>
+                                <div>
+                                    <i></i><a>Phone System Health Check</a>
+                                    <i></i><a>Telecoms Bill Review</a>
+                                </div>
+                                <div>
+                                    <i></i><a>Business Phone Systems</a>
+                                    <i></i><a>3CX Systems</a>
+                                </div>
                             </div>
-                            <div>
-                                <i></i><a>eCommerce Website Design</a>
-                                <i></i><a>Mobile App Development</a>
-                            </div>
-                            <div>
-                                <i></i><a>Pay Monthly Websites</a>
-                                <i></i><a>Web Hosting</a>
-                            </div>
-                        </div>
-                    </li>
+                        </li>
 
-                    <li class="security">
-                        <a>
-                            <i class="fa fa-shield-halved"></i>
-                            <h4>Cyber Security</h4>
-                        </a>
+                        <li class="design">
+                            <a>
+                                <i class="fa fa-code"></i>
+                                <h4><small>Web</small> Design</h4>
+                            </a>
 
-                        <div class="dropdown security-dropdown">
-                            <h2>Our Cyber Security Servicecs</h2>
-                            <div>
-                                <i></i><a>Cyber Security Assessment</a>
-                                <i></i><a>Cyber Essentials Certification</a>
+                            <div class="dropdown design-dropdown">
+                                <h2>Our Web Design Services</h2>
+                                <div>
+                                    <i></i><a>Bespoke Website Design</a>
+                                    <i></i><a>Branding & Design</a>
+                                </div>
+                                <div>
+                                    <i></i><a>eCommerce Website Design</a>
+                                    <i></i><a>Mobile App Development</a>
+                                </div>
+                                <div>
+                                    <i></i><a>Pay Monthly Websites</a>
+                                    <i></i><a>Web Hosting</a>
+                                </div>
                             </div>
-                            <div>
-                                <i></i><a>Cyber Security Management</a>
-                                <i></i><a>PCI Compliance</a>
-                            </div>
-                            <div>
-                                <i></i><a>Cyber  Penetration Testing</a>
-                                <i></i><a>Hacking Prevention</a>
-                            </div>
-                        </div>
-                    </li>
-                    
-                    <li class="training">
-                        <a>
-                            <i class="fa fa-graduation-cap"></i>
-                            <h4>Developer Training</h4>
-                        </a>
+                        </li>
 
-                        <div class="dropdown training-dropdown">
-                            <h2>Our Developer Course Services</h2>
-                            <div>
-                                <i></i><a>Train For A Career In Tech</a>
-                                <i></i><a>Scion Collaborators</a>
+                        <li class="security">
+                            <a>
+                                <i class="fa fa-shield-halved"></i>
+                                <h4><small>Cyber</small> Security</h4>
+                            </a>
+
+                            <div class="dropdown security-dropdown">
+                                <h2>Our Cyber Security Servicecs</h2>
+                                <div>
+                                    <i></i><a>Cyber Security Assessment</a>
+                                    <i></i><a>Cyber Essentials Certification</a>
+                                </div>
+                                <div>
+                                    <i></i><a>Cyber Security Management</a>
+                                    <i></i><a>PCI Compliance</a>
+                                </div>
+                                <div>
+                                    <i></i><a>Cyber  Penetration Testing</a>
+                                    <i></i><a>Hacking Prevention</a>
+                                </div>
                             </div>
-                            <div>
-                                <i></i><a>Skills Bootcamp</a>
+                        </li>
+                        
+                        <li class="training">
+                            <a>
+                                <i class="fa fa-graduation-cap"></i>
+                                <h4><small>Developer</small> Training</h4>
+                            </a>
+
+                            <div class="dropdown training-dropdown">
+                                <h2>Our Developer Course Services</h2>
+                                <div>
+                                    <i></i><a>Train For A Career In Tech</a>
+                                    <i></i><a>Scion Collaborators</a>
+                                </div>
+                                <div>
+                                    <i></i><a>Skills Bootcamp</a>
+                                </div>
+                                <div>
+                                    <i></i><a>Scion Scheme Frequently Asked Questions</a>
+                                </div>
                             </div>
-                            <div>
-                                <i></i><a>Scion Scheme Frequently Asked Questions</a>
-                            </div>
-                        </div>
-                    </li>
-                </ul>
+                        </li>
+                    </ul>
+                </div>
             </div>
         </div>
     </div>
-
-
+    
         <!--  Banner Carousel  -->
-
         <div class="carousel-container">
             <!--  Inputs allow changing through cards  -->
             <input type="radio" name="slider" id="c1" checked>
@@ -311,7 +325,6 @@
             </div>
         </div>
 
-
         <div class="services">
             <div class="container">
                 <div class="service-container">
@@ -320,7 +333,6 @@
                 </div>
             </div>
         
-
             <div class="section">
                 <div class="container">
                     <div class="row">
@@ -343,7 +355,6 @@
                             <a href="#">Read More</a>
                         </div>
                     </div>
-
                     <div class="row">
                         <div class="service-item tel">
                             <i class="fa fa-phone-volume"></i>
@@ -374,9 +385,7 @@
             </div>
         </div>
 
-
         <!--  Partners Carousel  -->
-
         <div class="partners-section">
             <div class="partners">
                 <div  class="track">
@@ -410,9 +419,7 @@
             </div>
         </div>
 
-
         <!--  Page about / reviews section -->
-
         <div id="about">
             <div class="container">
                 <div class="row">
@@ -421,11 +428,9 @@
                         <p class="p-bold">Netmatters is a leading <a href="#">Bespoke Software</a>, <a href="#">IT Support</a>, and <a href="#">Digital Marketing</a> company based in the East of England
                              with offices in <a href="#">Cambridge</a>, <a href="#">Wymondham</a>, and <a href="#">Great Yarmouth</a>.
                         </p>
-
                         <p>We aren't tied into contracts with third-party providers, so you know that our recommendations for your business are based purely with one benefit in mind:
                             to help improve your business with the most appropriate solutions.
                         </p>
-
                         <p class="margin">We pride ourselves on being an ethical business and have a unique business offering and cost model that ensures you get the most from our relationship in 
                             an upfront manner.
                         </p>
@@ -446,7 +451,6 @@
                             <i class="fa fa-star"></i>
                             <i class="fa fa-star"></i>
                         </div>
-
                         <p>
                             <span class="quote">Netmatters stood out from the start. Great guys and very easy to work with. Both the build and digital marketing teams are clearly skilled 
                             -they know their stuff! They delivered a website to our (high!) expectations and went over and above to ensure we were satisfied clients - and we are!
@@ -465,9 +469,7 @@
             </div>
         </div>
 
-
         <!-- News section -->
-
         <div class="latest-news">
             <div class="gap">
                 <div class="container">
@@ -496,7 +498,6 @@
 
                                 </div>
                                 </div>
-
                         </div>
                         <div class="news-item ai">
                             <img src="Assets/news/ai-integration.webp" alt="Image for AI Integration News Article">
@@ -534,9 +535,7 @@
             </div>
         </div>
 
-
         <!-- Case Studies Carousel -->
-
         <div class="case-section">
             <div class="case-studies">
                 <div class="track">
@@ -557,9 +556,7 @@
             </div>
         </div>
 
-
         <!-- Footer Links and Media -->
-
         <footer>
             <div class="container">
                 <div class="footer-row">
@@ -636,83 +633,72 @@
         
 
         <!-- Copyright section -->
-    
         <footer class="footer-footer">
             <div class="container">
-                &copy; Copyright Netmatters 2025. All rights reserved. 
-                <ul>
-                    <li>
-                        <a href="#" target="_blank">Sitemap</a>
-                    </li>
-                </ul>
+                &copy; Copyright Netmatters 2025. All rights reserved. - <a href="#" target="_blank">Sitemap</a>
             </div>
         </footer>
 </div>
 
-        <div class="sidebar">
+    <div class="sidebar">
         <div>
             <h4>Services</h4>
             <ul>
-                <li><a href="#">Bespoke software</a></li>
-                <li><a href="#">IT support</a></li>
-                <li><a href="#">Digital marketing</a></li>
-                <li><a href="#">Telecoms services</a></li>
-                <li><a href="#">Web design</a></li>
-                <li><a href="#">Cyber security</a></li>
+                <li><a href="#"><i class="fa-solid fa-angles-right"></i>Bespoke software</a></li>
+                <li><a href="#"><i class="fa-solid fa-angles-right"></i>IT support</a></li>
+                <li><a href="#"><i class="fa-solid fa-angles-right"></i>Digital marketing</a></li>
+                <li><a href="#"><i class="fa-solid fa-angles-right"></i>Telecoms services</a></li>
+                <li><a href="#"><i class="fa-solid fa-angles-right"></i>Web design</a></li>
+                <li><a href="#"><i class="fa-solid fa-angles-right"></i>Cyber security</a></li>
             </ul>
         </div>
-
         <div>
             <h4>Our Work</h4>
             <ul>
-                <li><a href="#">Case studies</a></li>
-                <li><a href="#">Our digital marketing clients</a></li>
-                <li><a href="#">Our website clients</a></li>
-                <li><a href="#">Our IT clients</a></li>
-                <li><a href="#">Our bespoke software clients</a></li>
-                <li><a href="#">Our Telecoms Clients</a></li>
+                <li><a href="#"><i class="fa-solid fa-angles-right"></i>Case studies</a></li>
+                <li><a href="#"><i class="fa-solid fa-angles-right"></i>Our digital marketing clients</a></li>
+                <li><a href="#"><i class="fa-solid fa-angles-right"></i>Our website clients</a></li>
+                <li><a href="#"><i class="fa-solid fa-angles-right"></i>Our IT clients</a></li>
+                <li><a href="#"><i class="fa-solid fa-angles-right"></i>Our bespoke software clients</a></li>
+                <li><a href="#"><i class="fa-solid fa-angles-right"></i>Our Telecoms Clients</a></li>
             </ul>
         </div>
-
         <div>
             <h4>Our Knowledge</h4>
             <ul>
-                <li><a href="#">Technologies</a></li>
-                <li><a href="#">Industries</a></li>
-                <li><a href="#">News</a></li>
-                <li><a href="#">Insights</a></li>
+                <li><a href="#"><i class="fa-solid fa-angles-right"></i>Technologies</a></li>
+                <li><a href="#"><i class="fa-solid fa-angles-right"></i>Industries</a></li>
+                <li><a href="#"><i class="fa-solid fa-angles-right"></i>News</a></li>
+                <li><a href="#"><i class="fa-solid fa-angles-right"></i>Insights</a></li>
             </ul>
         </div>
-
         <div>
             <h4>Training</h4>
             <ul>
-                <li><a href="#">Train for a career in tech</a></li>
-                <li><a href="#">Skills bootcamp</a></li>
-                <li><a href="#">SCS frequently asked questions</a></li>
-                <li><a href="#">Scion collaborators</a></li>
+                <li><a href="#"><i class="fa-solid fa-angles-right"></i>Train for a career in tech</a></li>
+                <li><a href="#"><i class="fa-solid fa-angles-right"></i>Skills bootcamp</a></li>
+                <li><a href="#"><i class="fa-solid fa-angles-right"></i>SCS frequently asked questions</a></li>
+                <li><a href="#"><i class="fa-solid fa-angles-right"></i>Scion collaborators</a></li>
             </ul>
         </div>
-
         <div>
             <h4>Our Company</h4>
             <ul>
-                <li><a href="#">Why choose us?</a></li>
-                <li><a href="#">Our culture</a></li>
-                <li><a href="#">Our team</a></li>
-                <li><a href="#">Our careers</a></li>
-                <li><a href="#">Our benefits</a></li>
-                <li><a href="#">Our accreditations</a></li>
-                <li><a href="#">Laptops 4 learning</a></li>
+                <li><a href="#"><i class="fa-solid fa-angles-right"></i>Why choose us?</a></li>
+                <li><a href="#"><i class="fa-solid fa-angles-right"></i>Our culture</a></li>
+                <li><a href="#"><i class="fa-solid fa-angles-right"></i>Our team</a></li>
+                <li><a href="#"><i class="fa-solid fa-angles-right"></i>Our careers</a></li>
+                <li><a href="#"><i class="fa-solid fa-angles-right"></i>Our benefits</a></li>
+                <li><a href="#"><i class="fa-solid fa-angles-right"></i>Our accreditations</a></li>
+                <li><a href="#"><i class="fa-solid fa-angles-right"></i>Laptops 4 learning</a></li>
             </ul>
         </div>
-
         <div>
             <h4>Contact us</h4>
             <ul>
-                <li><a href="#">Cambridge office</a></li>
-                <li><a href="#">Wymondham office</a></li>
-                <li><a href="#">Great Yarmouth office</a></li>
+                <li><a href="#"><i class="fa-solid fa-angles-right"></i>Cambridge office</a></li>
+                <li><a href="#"><i class="fa-solid fa-angles-right"></i>Wymondham office</a></li>
+                <li><a href="#"><i class="fa-solid fa-angles-right"></i>Great Yarmouth office</a></li>
             </ul>
         </div>
     </div>
@@ -721,6 +707,7 @@
         <script src="js/carousel.js"></script>
         <script src="js/stickyHeader.js"></script>
         <script src="js/mobileMenu.js"></script>
-    </body>
+        <script src="js/cookiesPopup.js"></script>
 
+    </body>
 </html>

@@ -1,25 +1,27 @@
 document.addEventListener("DOMContentLoaded", () => {
+    const stickyy = document.querySelector(".stickyy");
 
-    const nav = document.querySelector(".main-navigation");
     let lastScroll = 0;
 
     function Scroll() {
-        const currentScroll = window.scrollY;
+        const currentScroll =
+            window.pageYOffset ||
+            document.documentElement.scrollTop;
 
-        if (currentScroll > nav.offsetTop) {
-            nav.classList.add("sticky");
+        if (currentScroll > 100) {
+            stickyy.classList.add("sticky");
 
             if (currentScroll < lastScroll) {
-                nav.classList.add("show");
+                stickyy.classList.add("show");
             } else {
-                nav.classList.remove("show");
+                stickyy.classList.remove("show");
             }
         } else {
-            nav.classList.remove("sticky", "show");
+            stickyy.classList.remove("sticky", "show");
         }
 
         lastScroll = currentScroll;
     }
 
-    window.addEventListener("scroll", Scroll);
+    window.addEventListener("scroll", Scroll, { passive: true });
 });

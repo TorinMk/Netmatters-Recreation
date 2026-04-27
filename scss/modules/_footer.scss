@@ -16,12 +16,10 @@ footer {
     }
 
     .footer-social-menu {
-        /* only margin for spacing, no forced width */
         margin-bottom: 20px;
     }
 
     .footer-menu {
-        /* remove width: 100%; so they stay side by side on desktop */
         font-size: $font-size-sm;
         line-height: 1.375rem;
 
@@ -50,14 +48,25 @@ footer {
     }
 }
 
-/* Mobile-specific layout */
 @media (max-width: 768px) {
     footer .row {
-        flex-direction: column; /* stack rows */
+        flex-direction: column;
     }
 
     .footer-menu,
     .footer-social-menu {
-        width: 100%; /* make menus full-width on mobile */
+        width: 100%;
+    }
+}
+
+
+.footer-footer {
+    font-size: $font-size-sm;
+    a {
+        text-decoration: none;
+        color: $white;
+    }
+    .container {
+        background-color: #212330;
     }
 }

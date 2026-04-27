@@ -34,18 +34,6 @@
     &.dev { @include service-colour(#ce4125); }
 }
 
-@mixin dropdown {
-  display: none;
-  position: absolute;
-  width: 100%;
-
-  .main-navigation:hover &,
-  &:hover {
-    display: block;
-  }
-}
-
-
 
 @mixin nav-item($color) {
   &:hover {

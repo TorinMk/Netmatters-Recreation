@@ -12,14 +12,13 @@ body {
     font-size: $font-size-md;
     letter-spacing: .4px;
     font-family: Poppins, sans-serif;
-    overflow-x: hidden;
 }
 
 html, body {
     margin: 0;
     padding: 0;
-    height: 100%;
     overflow-x: hidden;
+    overflow-y: auto;
 }
 
 p {
@@ -75,3 +74,21 @@ h4 {
     }
 }
 
+.stickyy {
+    position: relative;
+    z-index: 1000;
+}
+
+.stickyy.sticky {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+
+    transform: translateY(-100%);
+    transition: transform 0.3s ease;
+}
+
+.stickyy.sticky.show {
+    transform: translateY(0);
+}

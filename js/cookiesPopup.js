@@ -1,15 +1,15 @@
 document.addEventListener("DOMContentLoaded", () => {
     const cookies = document.getElementById("cookies");
-    const cookiesAccept = document.getElementById("cookiesAccept");
+    const cookiesAccept = document.getElementById("cookies-accept");
 
-    // Checks if cookiesAccepted is already true
     const cookiesAccepted = localStorage.getItem("cookiesAccepted")
 
-    if (!cookiesAccepted) {
+    if (cookiesAccepted !== "true") {
         cookies.style.display = "block";
     }
 
-    cookiesAccept.addEventListener("click", () => {
+    cookiesAccept.addEventListener("click", (e) => {
+        e.preventDefault();
         localStorage.setItem("cookiesAccepted", "true");
         cookies.style.display = "none";
     })
